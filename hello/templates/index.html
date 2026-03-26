@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello from Cloud Run!</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Hello, <span class="name">{{ name }}</span>!</h1>
+        <p class="subtitle">You just deployed your first app to <span class="highlight">Cloud Run</span></p>
+        <div class="info-box">
+            <p>This app is running on Google Cloud.</p>
+            <p>Try changing the <code>NAME</code> environment variable to see this page update.</p>
+        </div>
+        <div class="services">
+            <span class="badge">Cloud Run</span>
+            <span class="badge">Cloud Build</span>
+            <span class="badge">Artifact Registry</span>
+        </div>
+    </div>
+</body>
+</html>
