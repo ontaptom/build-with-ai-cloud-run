@@ -159,9 +159,14 @@ Let's set up Gemini CLI with Gemini3:
 ```
 
 This will set up an auth via service account. It will need 2-3 minutes to update permissions.
+Install skill that help gemini cli use up to date information:
+```bash
+npx skills add google-gemini/gemini-skills --skill vertex-ai-api-dev --global
+```
+
+Start Gemini CLI:
 
 ```bash
-cd ../chatbot
 gemini
 ```
 
@@ -169,6 +174,7 @@ Try prompts like:
 - "Change the color scheme to a dark blue theme"
 - "Add a system prompt that makes the bot respond as a pirate"
 - "Add image generation - if the user message starts with 'generate image:' use Imagen to create and display an image"
+- "**Use vertex-ai-api-dev skill to** .... 
 
 **Test locally before deploying:**
 
