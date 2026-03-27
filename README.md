@@ -153,6 +153,13 @@ gcloud run services update chatbot \
 
 Cloud Shell comes with Gemini CLI pre-installed. Let's use it to modify the chatbot.
 
+Let's set up Gemini CLI with Gemini3:
+```bash
+. ../gemini-cli/set-gemini.sh
+```
+
+This will set up an auth via service account. It will need 2-3 minutes to update permissions.
+
 ```bash
 cd ../chatbot
 gemini
